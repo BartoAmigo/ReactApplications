@@ -3,89 +3,20 @@ Started on 5/21/2021
 This file contains basic React Applications.
 *************************************************************
 PROGRAMS
-Name/Date *creation in Chronological Order*
-*************************************************************
-helloworld/5-20-21
-tickfunction/5-20-21
-welcomecomponent/5-22-21
-clockwithoutstates/5-22-21
-clockwithstates/5-22-21
-eventhandling/5-23-21
-conditionalrendering/5-29-21
-
-*************************************************************
-NOTES --section-- 
-*************************************************************
-5/31/2021
---short hand if-else--
-Inline If with logical && Operator
-- true && expression
-- Ex: unreadMessages.length > 0 && 
-- If condition is true element right after && will run, if
-its false then it will be ignored. 
-
-Inline if-Else with Conditional Operator 
-- condition ? true : false
-- Ex: isLoggedIn ? 'currently': 'not'
-
-Preventing Component from Rendering
-- return null to prevent a component from rendering.
+Name/Date #About *creation in Chronological Order*
 -------------------------------------------------------------
---Lists and Keys--
-Rendering Multiple Components 
-- We can use map() 
--Ex: const numbers =[1,2,3,4,5] 
-     const listItems =numbers.map((number) => <li>{{number}</li> 
+helloworld/5-20-21 #displays helloworld 
+tickfunction/5-20-21 #displays time in form of a function
+welcomecomponent/5-22-21 #displays prop usage
+clockwithoutstates/5-22-21 #displays a clock object as a function
+clockwithstates/5-22-21 #displays a clock object as a class
+eventhandling/5-23-21 #shows basic button event handling 
+conditionalrendering/5-29-21 #shows rendering components conditonally.
 
-Basic List Component
-- components can accept an array of numbers. 
-**************************************************************
-6/01/2021
-Keys
-- identify which items have changed, added or removed. 
-- Keys are given to elements inside of array
-- Ex: const todoItems = todos.map((todo) =>
-<li key = {todo.id}>
-	{todo.text} 
-</li> 
-); 
+*************************************************************
 
-Keys without Identifiers 
-- You can use the index as a last resort.
-- Ex: const todoItems = todos.map((todo,index) => 
-<li key = {index}> 
-	{todo.text} 
-</li>
-); 
-
-Extracting Components with Keys 
-- Keys only make sense in context of surrounding array. 
-Ex: on a ListItem component should keep key on the elements 
-rather than <li> elements. 
-
-Keys must be unique among siblings
-
-Keys get passed as props
-
-Embedding map() in JSX
-- inline without using a variable. 
-- Longhand 
-	const listItems = numbers.map((number) =>
-		<ListItem key={number.toString()} 
-			value={number}/>
-		); 
-		return(
-			<ul>
-				{listItems}
-			</ul>
-		);
-- with JSX 
-	return (
-		<ul>
-			{numbers.map((number) =>
-				<ListItem key ={number.toString()}
-					value={number} />
-			)}
-		</ul>
-	);
+Extra Files
+Name/Date #About
+-------------------------------------------------------------
+Notes.txt/5-31-21 # contains notes about React
 *************************************************************
