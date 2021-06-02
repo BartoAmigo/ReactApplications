@@ -6,7 +6,7 @@ function TodoList(props){
   const todoitems = todos.map((todo)=>
   <TodoItem key={props.taskid} taskid={todo.taskid.toString()} task={todo.task}/>
   );
-  return <div><h1>Tasks</h1> {todoitems}</div>
+  return <div style={{border:"solid black 2px"}}><h1>Tasks</h1> {todoitems}</div>
 }
 
 function TodoItem(props){
@@ -32,7 +32,7 @@ function Blog(props){
     content={post.content}
     />
   );
-  return <div><h1>Blog Content</h1>{content}</div>;
+  return <div style={{border:"solid black 2px"}}><h1>Blog Content</h1>{content}</div>;
 }
 function Post(props){
   return <div>
@@ -43,10 +43,26 @@ function Post(props){
 }
 
 /******************************************/
+/*showing shorthand*/
+function Everythingfunction(props){
+  return (
+    <div style={{border:"solid black 2px"}}> <h1> this shows shorthand using Blog Content</h1>
+      {posts.map((post)=> 
+      <div key= {post.id}>
+      <h2>{post.id}</h2>
+      <h3>{post.title}</h3>
+      <h4>{post.content}</h4>
+      </div>
+      )}
+    </div>
+  )
+}
+
 function App(){
   return <div>
     <Blog/> 
     <TodoList/>
+    <Everythingfunction/>
     </div>
 
 }
