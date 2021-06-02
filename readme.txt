@@ -19,4 +19,5 @@ Extra Files
 Name/Date #About
 -------------------------------------------------------------
 Notes.txt/5-31-21 # contains notes about React
+about.txt/6-01-21 # contains why i'm doing this.
 *************************************************************
