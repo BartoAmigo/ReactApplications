@@ -13,6 +13,7 @@ clockwithstates/5-22-21 #displays a clock object as a class
 eventhandling/5-23-21 #shows basic button event handling 
 conditionalrendering/5-29-21 #shows rendering components conditonally.
 todolist/6-01-21 #shows how map can work.
+fakethermostat/6-02-21 #shows how states can be lifted
 
 *************************************************************
 
